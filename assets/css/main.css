@@ -1,0 +1,275 @@
+---
+---
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.h-112 {
+  height: 28rem;
+}
+
+.text-xxs {
+  font-size: 0.625rem;
+}
+
+/* Style the header: fixed position (always stay at the top) */
+/* .header { */
+/*   position: fixed; */
+  /* top: 0; */
+  /* z-index: 1; */
+  /* width: 100%; */
+  /* background-color: #f1f1f1; */
+/* } */
+
+/* The progress container (grey background) */
+/* .progress-container { */
+/*   width: 100%; */
+  /* height: 8px; */
+  /* background: #22262e; */
+/* } */
+
+/* The progress bar (scroll indicator) */
+/* .progress-bar { */
+/*   height: 8px; */
+  /* background: #2c3552; */
+  /* width: 0%; */
+/* } */
+
+.active {
+  border-bottom-right-radius: 0rem;
+  border-bottom-left-radius: 0rem;
+}
+
+@font-face {
+  font-family: Over-There;
+  src: url("/assets/webfonts/Over-There.ttf");
+  font-size: 1rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+ol,
+ul {
+  padding-left: 25px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+#hamburger {
+  display: none;
+}
+
+.collapsible {
+  cursor: pointer;
+  padding: 0px;
+  outline: 0 !important;
+  border: none;
+  -moz-outline-style: none;
+  text-align: left;
+  outline: none;
+}
+
+.content {
+  font-size: 1.1rem;
+  padding-left: 0.75rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+.linki {
+  color: #c62d3f !important;
+}
+
+.sidebar {
+  position: sticky;
+  right: 0;
+  padding: 20px;
+  margin-top: 40px;
+  height: 88vh;
+  width: 16rem;
+  margin-right: auto;
+  background-image: linear-gradient(#181b21, #22262E);
+  font-size: 1.35rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .sidebar {
+    position: absolute !important;
+    right: 0;
+    padding: 20px;
+    margin-top: 0px;
+    height: 100vh !important;
+    margin-right: auto;
+    background: #22262E;
+    font-size: 1.25rem;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .nav-hidden {
+    display: none;
+  }
+  #hamburger {
+    display: block;
+  }
+  .sidebar {
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    margin-top: 0px;
+    height: 88vh;
+    margin-right: auto;
+    background: #22262E;
+    font-size: 1.25rem;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    max-width: 0;
+  }
+  to {
+    max-width: 1000px;
+  }
+}
+.nav-down {
+  animation: 1s slide-left;
+}
+
+#e404:before,
+#e404:after {
+  content: "404";
+}
+
+.glitch {
+  position: relative;
+  top: 40%;
+  text-align: center;
+}
+.glitch:before,
+.glitch:after {
+  position: absolute;
+  overflow: hidden;
+  background-color: #181b21;
+}
+
+.glitch:before {
+  left: 8px;
+  text-shadow: 2px 0 #00dd88;
+  animation: glitch-animation 12s infinite linear;
+}
+.glitch:after {
+  left: 4px;
+  text-shadow: -2px 0 #dd0088;
+  animation: glitch-animation 12s infinite linear;
+}
+@keyframes glitch-animation {
+  0% {
+    clip: rect(55px, 9999px, 56px, 0);
+  }
+  5% {
+    clip: rect(47px, 9999px, 30px, 0);
+  }
+  10% {
+    clip: rect(33px, 9999px, 36px, 0);
+  }
+  15% {
+    clip: rect(35px, 9999px, 9px, 0);
+  }
+  20% {
+    clip: rect(63px, 9999px, 59px, 0);
+  }
+  25% {
+    clip: rect(96px, 9999px, 98px, 0);
+  }
+  30% {
+    clip: rect(48px, 9999px, 77px, 0);
+  }
+  35% {
+    clip: rect(50px, 9999px, 34px, 0);
+  }
+  40% {
+    clip: rect(60px, 9999px, 72px, 0);
+  }
+  45% {
+    clip: rect(10px, 9999px, 81px, 0);
+  }
+  50% {
+    clip: rect(2px, 9999px, 60px, 0);
+  }
+  55% {
+    clip: rect(23px, 9999px, 89px, 0);
+  }
+  60% {
+    clip: rect(76px, 9999px, 91px, 0);
+  }
+  65% {
+    clip: rect(62px, 9999px, 30px, 0);
+  }
+  70% {
+    clip: rect(60px, 9999px, 73px, 0);
+  }
+  75% {
+    clip: rect(60px, 9999px, 87px, 0);
+  }
+  80% {
+    clip: rect(2px, 9999px, 14px, 0);
+  }
+  85% {
+    clip: rect(28px, 9999px, 87px, 0);
+  }
+  90% {
+    clip: rect(73px, 9999px, 50px, 0);
+  }
+  95% {
+    clip: rect(79px, 9999px, 70px, 0);
+  }
+  100% {
+    clip: rect(17px, 9999px, 79px, 0);
+  }
+}
+
+.btn {
+  @apply text-white text-center rounded p-1;
+}
+
+.btn-blue {
+  @apply bg-blue-600;
+}
+
+.btn-blue:hover {
+  @apply bg-blue-700;
+}
+
+.btn-green {
+  @apply bg-green-600;
+}
+
+.btn-green:hover {
+  @apply bg-green-700;
+}
+
+.loading {
+  transition: 1s ease-in-out;
+}
+
+.loading-after {
+  animation-duration: 2s;
+  animation-name: slide;
+}
+
+@keyframes slide {
+  to {
+    width: 0%;
+    opacity: 0;
+  }
+}

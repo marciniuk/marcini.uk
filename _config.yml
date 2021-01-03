@@ -1,0 +1,9 @@
+name: Adrian Marciniuk
+
+domain: marcini.uk
+url: "https://marcini.uk"
+
+plugins:
+  - jekyll-postcss
+  - jekyll-seo-tag
+  - jekyll-sitemap

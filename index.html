@@ -1,0 +1,21 @@
+---
+layout: container-loading
+---
+
+<div class="text-center">
+  Please enable javascript or change browser and now just click this
+  <a class="linki" href="/en/">button</a> ;P
+</div>
+
+<script>
+  window.onload = function () {
+    var ln = window.navigator.language || navigator.browserLanguage;
+    if (ln == "pl-PL") {
+      window.location.href = "/pl";
+    } else if (ln == "pl") {
+      window.location.href = "/pl";
+    } else {
+      window.location.href = "/en";
+    }
+  };
+</script>
