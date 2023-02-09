@@ -5,6 +5,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.max-h-75p {
+  max-height: 75%;
+}
+
+.przycisk {
+  height: 12rem;
+  width: 12rem;
+}
 .h-112 {
   height: 28rem;
 }
