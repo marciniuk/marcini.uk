@@ -34,7 +34,7 @@
 /* .progress-container { */
 /*   width: 100%; */
 /* height: 8px; */
-/* background: #22262e; */
+/* background: #161e31; */
 /* } */
 
 /* The progress bar (scroll indicator) */
@@ -106,7 +106,7 @@ ol {
   height: 95vh;
   width: 16rem;
   margin-right: auto;
-  background-image: linear-gradient(#181b21, #22262e);
+  background-image: linear-gradient(#090f1b, #161e31);
   font-size: 1.35rem;
 }
 
@@ -118,7 +118,7 @@ ol {
     margin-top: 0px;
     height: 100vh !important;
     margin-right: auto;
-    background: #22262e;
+    background: #161e31;
     font-size: 1.25rem;
   }
 }
@@ -136,7 +136,7 @@ ol {
     margin-top: 0px;
     height: 88vh;
     margin-right: auto;
-    background: #22262e;
+    background: #161e31;
     font-size: 1.25rem;
   }
 }
@@ -167,7 +167,7 @@ ol {
 .glitch:after {
   position: absolute;
   overflow: hidden;
-  background-color: #181b21;
+  background-color: #090f1b;
 }
 
 .glitch:before {
